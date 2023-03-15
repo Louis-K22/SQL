@@ -1,0 +1,44 @@
+
+
+
+/** My_shop
+Apple
+Oranges
+Hat
+Beanie
+Beans
+Laptop
+Phone
+Television
+Pencil
+Pen
+Cake
+Plate
+Frame
+Shoe
+Lamp
+**/
+
+// Create a table for a store which sells at least 15 items, and has 5 columns //
+
+CREATE TABLE my_shop (id INTEGER PRIMARY KEY, Item TEXT, Price INTEGER, Colour TEXT, Aisle INTEGER);
+
+insert into my_shop values (1,"Apple",2,"Red",7),
+(2,"Orange",1.5,"orange", 7),
+(3,"Hat",10,"Black",2),
+(4,"Beanie",8,"Blue",2),
+(5,"Beans",3.5,"Dark Red",4),
+(6,"Laptop",1500,"silver",12),
+(7,"Phone",800,"black",12),
+(8,"Television",450,"grey",12),
+(9,"Pencil",1,"black_red",3),
+(10,"Pen",2,"clear",3),
+(11,"Cake",5,"multi",6),
+(12,"Plate",16,"white",9),
+(13,"Frame",7,"gold", 15),
+(14,"shoe",55,"white",3),
+(15,"lamp",34,"brass",14);
+
+// Instruction, show only the Item/Price column ordered by price //
+
+select item, price from my_shop order by price desc;
